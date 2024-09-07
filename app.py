@@ -51,9 +51,6 @@ def update(id):
             return "there was issue updating your task"
     else:
         return render_template('update.html',task=task_to_update)
-    try:
-        print('nothing for now')
-    except:
-        return "error here"
+    
 if __name__=="__main__":
     app.run(debug=True)
